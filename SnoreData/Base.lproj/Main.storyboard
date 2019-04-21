@@ -185,6 +185,18 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkI-tN-eWR">
                                         <rect key="frame" x="170.5" y="212" width="34" height="391"/>
                                         <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="save:" destination="hiz-gl-AKx" eventType="touchUpInside" id="RTU-Nw-lrm"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stE-JA-aPl">
+                                        <rect key="frame" x="111" y="603" width="153" height="0.0"/>
+                                        <state key="normal" title="Delete Family Member">
+                                            <color key="titleColor" red="0.59448464690000002" green="0.060491965270000003" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deleteFamilyMember:" destination="hiz-gl-AKx" eventType="touchUpInside" id="En2-Lj-dRO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -198,6 +210,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YUm-mN-v4J"/>
                     </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="wHO-QW-gxW" id="CLF-hl-s1b"/>
+                        <outlet property="deleteButton" destination="stE-JA-aPl" id="6To-Rg-fm8"/>
+                        <outlet property="nameTextField" destination="6KN-pR-JBl" id="yBk-te-jBL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Fq-PU-bmN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -232,6 +249,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHJ-PQ-0Zc">
                                         <rect key="frame" x="170.5" y="529" width="34" height="30"/>
                                         <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="saveButton:" destination="ve7-YG-XLi" eventType="touchUpInside" id="7Fz-Dj-S9r"/>
+                                            <action selector="savedButton:" destination="Xwi-qy-vkI" eventType="touchUpInside" id="r7H-HZ-DfD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -245,8 +266,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HAg-xE-TV4"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="flV-pt-T58" id="zC4-Qv-Nhm"/>
+                        <outlet property="hoursInput" destination="7r0-eT-q0M" id="Jhy-ee-2pR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b61-8T-bjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Xwi-qy-vkI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2556" y="761"/>
         </scene>

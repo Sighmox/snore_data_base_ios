@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		791816922266A7C900FC297A /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791816912266A7C900FC297A /* AlertViewController.swift */; };
+		791816942266A98900FC297A /* FamilyMemberDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791816932266A98900FC297A /* FamilyMemberDelegate.swift */; };
+		791816962266B92500FC297A /* SleepRecordDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791816952266B92500FC297A /* SleepRecordDelegate.swift */; };
 		E742B336225BF8800060E572 /* SnoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E742B334225BF8800060E572 /* SnoreData.xcdatamodeld */; };
 		E7911C7122539D6200891426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7911C7022539D6200891426 /* AppDelegate.swift */; };
 		E7911C7322539D6200891426 /* FamilyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7911C7222539D6200891426 /* FamilyTableViewController.swift */; };
@@ -15,7 +18,7 @@
 		E7911C7E22539D6B00891426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7911C7C22539D6B00891426 /* LaunchScreen.storyboard */; };
 		E7911C8922539D6C00891426 /* SnoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7911C8822539D6C00891426 /* SnoreDataTests.swift */; };
 		E7911C9422539D6C00891426 /* SnoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7911C9322539D6C00891426 /* SnoreDataUITests.swift */; };
-		E7911CA42253A0D900891426 /* AddEditFamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7911CA32253A0D900891426 /* AddEditFamilyViewController.swift */; };
+		E7911CA42253A0D900891426 /* AddEditFamilyMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7911CA32253A0D900891426 /* AddEditFamilyMemberViewController.swift */; };
 		E7911CA62253A0E900891426 /* SleepRecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7911CA52253A0E900891426 /* SleepRecordTableViewController.swift */; };
 		E7911CA82253BB6600891426 /* AddSleepRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7911CA72253BB6600891426 /* AddSleepRecordViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		791816912266A7C900FC297A /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		791816932266A98900FC297A /* FamilyMemberDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberDelegate.swift; sourceTree = "<group>"; };
+		791816952266B92500FC297A /* SleepRecordDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepRecordDelegate.swift; sourceTree = "<group>"; };
 		E742B335225BF8800060E572 /* SnoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SnoreData.xcdatamodel; sourceTree = "<group>"; };
 		E7911C6D22539D6200891426 /* SnoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7911C7022539D6200891426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +58,7 @@
 		E7911C8F22539D6C00891426 /* SnoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7911C9322539D6C00891426 /* SnoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoreDataUITests.swift; sourceTree = "<group>"; };
 		E7911C9522539D6C00891426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7911CA32253A0D900891426 /* AddEditFamilyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditFamilyViewController.swift; sourceTree = "<group>"; };
+		E7911CA32253A0D900891426 /* AddEditFamilyMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditFamilyMemberViewController.swift; sourceTree = "<group>"; };
 		E7911CA52253A0E900891426 /* SleepRecordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepRecordTableViewController.swift; sourceTree = "<group>"; };
 		E7911CA72253BB6600891426 /* AddSleepRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSleepRecordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,9 +153,12 @@
 			isa = PBXGroup;
 			children = (
 				E7911C7222539D6200891426 /* FamilyTableViewController.swift */,
-				E7911CA32253A0D900891426 /* AddEditFamilyViewController.swift */,
+				E7911CA32253A0D900891426 /* AddEditFamilyMemberViewController.swift */,
+				791816932266A98900FC297A /* FamilyMemberDelegate.swift */,
+				791816912266A7C900FC297A /* AlertViewController.swift */,
 				E7911CA72253BB6600891426 /* AddSleepRecordViewController.swift */,
 				E7911CA52253A0E900891426 /* SleepRecordTableViewController.swift */,
+				791816952266B92500FC297A /* SleepRecordDelegate.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -285,7 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7911CA42253A0D900891426 /* AddEditFamilyViewController.swift in Sources */,
+				E7911CA42253A0D900891426 /* AddEditFamilyMemberViewController.swift in Sources */,
+				791816922266A7C900FC297A /* AlertViewController.swift in Sources */,
+				791816942266A98900FC297A /* FamilyMemberDelegate.swift in Sources */,
+				791816962266B92500FC297A /* SleepRecordDelegate.swift in Sources */,
 				E7911CA82253BB6600891426 /* AddSleepRecordViewController.swift in Sources */,
 				E7911C7322539D6200891426 /* FamilyTableViewController.swift in Sources */,
 				E7911C7122539D6200891426 /* AppDelegate.swift in Sources */,
