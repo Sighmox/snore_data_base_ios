@@ -68,10 +68,7 @@ class FamilyTableViewController: UITableViewController, NSFetchedResultsControll
         
         switch segue.identifier {
             
-        case "addFamilyMember":
-            let destination = segue.destination as! AddEditFamilyMemberViewController
-            destination.familyDelegate = self
-            
+
         case "editFamilyMember":
             let cell = sender as! UITableViewCell
             let indexPath = tableView.indexPath(for: cell)!
@@ -81,7 +78,12 @@ class FamilyTableViewController: UITableViewController, NSFetchedResultsControll
             destination.familyMember = selectedFamilyMember
             destination.familyDelegate = self
             
-        case "showFamilyMemberRecords":
+         case "addFamilyMember":
+            let destination = segue.destination as! AddEditFamilyMemberViewController
+            destination.familyDelegate = self
+            
+            
+         case "showFamilyMemberSleepRecords":
             let selectedRow = tableView.indexPathForSelectedRow!.row
             let familyMember = familyMemberObjects[selectedRow]
             let destination = segue.destination as! SleepRecordViewController
